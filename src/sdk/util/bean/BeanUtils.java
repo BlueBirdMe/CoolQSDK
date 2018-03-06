@@ -86,7 +86,22 @@ public class BeanUtils {
      * @throws Exception
      */
     public static <T> T create(Class<T> clazz, JSONObject json) throws Exception {
-        return fromJson.create(clazz, JSONUtils.googleJsonParser.parse(json.toString()).getAsJsonObject());
+        return create(clazz, json.toString());
+    }
+    
+    /**
+     * 根据Json创建Beans
+     *
+     * @param <T>
+     * @param clazz
+     * @param json
+     *
+     * @return
+     *
+     * @throws Exception
+     */
+    public static <T> T create(Class<T> clazz, String json) throws Exception {
+        return fromJson.create(clazz, JSONUtils.googleJsonParser.parse(json).getAsJsonObject());
     }
 
     /**
