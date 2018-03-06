@@ -2,6 +2,8 @@
 
 ## 依赖http-api,详见如下:**[链接](https://github.com/richardchien/coolq-http-api)**
 
+## 基于Java-CoolQSDK开发的  [例子](https://github.com/azbh111/CoolQExampleJavaPlugin)  可以直接在其基础上进行开发
+
 ------
 
 # 配置SDK
