@@ -29,12 +29,12 @@ public class SDKInit {
      * 记录所有类
      */
     public static final Set<Class> ALLCLASS = new HashSet();
-    
-    public static void init(Map<Class,String> init) {
+
+    public static void init(Map<Class, String> init) {
         try {
             System.out.println("[CoolQSDK]包扫描...");
             initClass(SDKInit.class, "sdk.");
-            if(init != null){
+            if (init != null) {
                 init.entrySet().forEach(en -> initClass(en.getKey(), en.getValue()));
             }
             System.out.println("[CoolQSDK]注册Bean...");
@@ -50,22 +50,30 @@ public class SDKInit {
         }
     }
 
+    public static void registerClass(Class clazz) {
+        if (!ALLCLASS.contains(clazz)) {
+            ALLCLASS.add(clazz);
+            BeanUtils.registerClass(clazz);
+        }
+    }
+
     private static void registerBean() {
         ALLCLASS.forEach(p -> BeanUtils.registerClass(p));
     }
 
     /**
      * 扫描clazz所在jar/文件夹下的所有以pkg开头的类
+     *
      * @param clazz
      * @param pkg
      */
-    public static void initClass(Class clazz, String pkg){
+    public static void initClass(Class clazz, String pkg) {
         String path = clazz.getProtectionDomain().getCodeSource().getLocation().getFile();
         path = API.urlDecode(path, "UTF-8");
-        if(path.startsWith("/")){
+        if (path.startsWith("/")) {
             path = path.substring(1);
         }
-        System.out.println("[CoolQSDK]scan classes in ("+path+") whose name start with "+pkg);
+        System.out.println("[CoolQSDK]scan classes in (" + path + ") whose name start with " + pkg);
         int n = ALLCLASS.size();
         File f = new File(path);
         if (f.isFile()) {
@@ -115,7 +123,7 @@ public class SDKInit {
             }
         }
         n = ALLCLASS.size() - n;
-        System.out.println("[CoolQSDK]find "+n+" new Class");
+        System.out.println("[CoolQSDK]find " + n + " new Class");
     }
-    
+
 }
