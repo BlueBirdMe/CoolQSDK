@@ -6,7 +6,7 @@
 
 # 配置SDK
 
-初始化SDK后,会输出该配置文件new File("CoolQSDK.properties");
+初始化SDK后,配置文件会输出到该位置:new File("CoolQSDK.properties").getPath()
 
 ## CoolQSDK.properties
 
@@ -55,7 +55,9 @@ public class MyListener implements CoolQListener {
   //可回复的事件位于sdk.event.syncro包下
   //不可回复的事件位于sdk.event.asynchro包下
 }
+```
 
+```java
 //以下是一个完整的初始化例子
 package com.project;
 public class YourProjectClass{
@@ -67,6 +69,8 @@ public class YourProjectClass{
   }
 }
 ```
+
+
 
 ## 3.调用CoolQAPI
 
