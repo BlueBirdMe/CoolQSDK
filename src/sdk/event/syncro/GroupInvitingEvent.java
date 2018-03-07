@@ -5,46 +5,49 @@
  */
 package sdk.event.syncro;
 
-import sdk.coolq.request.NewGroupMemberApply;
-import sdk.coolq.request.reply.NewGroupMemberReply;
+import sdk.coolq.request.NewGroupInviting;
+import sdk.coolq.request.reply.NewGroupInvitingReply;
 import sdk.event.CoolQHandlerList;
 import sdk.event.api.RepliableEvent;
 
 /**
- * 有人请求入群事件
+ * 被邀请入群事件
+ *
  * @author zyp
  */
-public class NewGroupMemberApplyEvent extends RepliableEvent<NewGroupMemberApply, NewGroupMemberReply> {
+public class GroupInvitingEvent extends RepliableEvent<NewGroupInviting, NewGroupInvitingReply> {
 
     private static final CoolQHandlerList handlers = new CoolQHandlerList();
 
-    public NewGroupMemberApplyEvent(NewGroupMemberApply apply) {
+    public GroupInvitingEvent(NewGroupInviting apply) {
         super(apply);
     }
-    
+
     /**
-     * 获取想加群的QQ
-     * @return 
+     * 获取邀请者QQ
+     *
+     * @return
      */
-    public long getRequester(){
+    public long getInviter() {
         return getHandle().user_id;
     }
-    
+
     /**
-     * 获取请求者申请加入的QQ群
-     * @return 
+     * 获取被邀请入的群
+     *
+     * @return
      */
-    public long getGroup(){
+    public long getGroup() {
         return getHandle().group_id;
     }
-    
+
     /**
      * 同意
      *
      * @param remark 备注
      */
     public void approve() {
-        reply = new NewGroupMemberReply();
+        reply = new NewGroupInvitingReply();
         reply.approve = true;
         setCancelled(true);
     }
@@ -55,7 +58,7 @@ public class NewGroupMemberApplyEvent extends RepliableEvent<NewGroupMemberApply
      * @param reason
      */
     public void refuse(String reason) {
-        reply = new NewGroupMemberReply();
+        reply = new NewGroupInvitingReply();
         reply.approve = false;
         reply.reason = reason;
         setCancelled(true);

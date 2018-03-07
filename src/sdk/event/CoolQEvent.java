@@ -63,6 +63,19 @@ public abstract class CoolQEvent<H extends IReport> {
         return c;
     }
 
+    public long getTime() {
+        return handle.time;
+    }
+
+    /**
+     * 返回登录QQ
+     *
+     * @return
+     */
+    public long getRobotId() {
+        return handle.self_id;
+    }
+
     /**
      * 为了更简单清晰的代码而制造。这个构造器取得的是同步的事件。
      * <p>

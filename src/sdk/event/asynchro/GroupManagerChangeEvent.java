@@ -6,7 +6,7 @@
 package sdk.event.asynchro;
 
 import sdk.coolq.event.GroupManagerChange;
-import sdk.event.AsynchroEvent;
+import sdk.event.api.AsynchroEvent;
 import sdk.event.CoolQHandlerList;
 
 /**

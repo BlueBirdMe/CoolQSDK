@@ -9,7 +9,7 @@ import sdk.coolq.event.GroupFileUpload;
 import sdk.coolq.event.GroupManagerChange;
 import sdk.coolq.event.GroupMemberIncrease;
 import sdk.coolq.event.NewFriend;
-import sdk.event.AsynchroEvent;
+import sdk.event.api.AsynchroEvent;
 import sdk.event.CoolQEvent;
 import sdk.event.CoolQEventManager;
 import sdk.util.bean.FieldSelector;

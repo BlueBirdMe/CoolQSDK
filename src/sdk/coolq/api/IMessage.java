@@ -8,7 +8,7 @@ package sdk.coolq.api;
 import sdk.coolq.message.DiscussMessage;
 import sdk.coolq.message.GroupMessage;
 import sdk.coolq.message.PrivateMessage;
-import sdk.event.RepliableEvent;
+import sdk.event.api.RepliableEvent;
 import sdk.util.bean.FieldSelector;
 
 /**

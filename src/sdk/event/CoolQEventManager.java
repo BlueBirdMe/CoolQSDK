@@ -5,6 +5,7 @@
  */
 package sdk.event;
 
+import sdk.event.api.AsynchroEvent;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;

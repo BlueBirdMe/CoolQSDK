@@ -7,7 +7,7 @@ package sdk.coolq.api;
 
 import sdk.coolq.event.GroupMemberDecrease;
 import sdk.coolq.event.KickedFromGroup;
-import sdk.event.AsynchroEvent;
+import sdk.event.api.AsynchroEvent;
 import sdk.util.bean.FieldSelector;
 
 /**

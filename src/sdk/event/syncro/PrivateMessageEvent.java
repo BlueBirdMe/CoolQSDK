@@ -8,14 +8,15 @@ package sdk.event.syncro;
 import sdk.coolq.message.PrivateMessage;
 import sdk.coolq.message.reply.PrivateMessageReply;
 import sdk.event.CoolQHandlerList;
-import sdk.event.RepliableEvent;
+import sdk.event.api.IMessageEvent;
+import sdk.event.api.RepliableEvent;
 
 /**
  * 私聊消息事件
  *
  * @author zyp
  */
-public class PrivateMessageEvent extends RepliableEvent<PrivateMessage, PrivateMessageReply> {
+public class PrivateMessageEvent extends RepliableEvent<PrivateMessage, PrivateMessageReply> implements IMessageEvent<PrivateMessage>{
 
     private static final CoolQHandlerList handlers = new CoolQHandlerList();
 

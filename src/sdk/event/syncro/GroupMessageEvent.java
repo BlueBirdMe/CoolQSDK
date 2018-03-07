@@ -8,20 +8,28 @@ package sdk.event.syncro;
 import sdk.coolq.message.GroupMessage;
 import sdk.coolq.message.reply.GroupMessageReply;
 import sdk.event.CoolQHandlerList;
-import sdk.event.RepliableEvent;
+import sdk.event.api.IMessageEvent;
+import sdk.event.api.RepliableEvent;
 
 /**
  *
  * @author zyp
  */
-public class GroupMessageEvent extends RepliableEvent<GroupMessage, GroupMessageReply> {
+public class GroupMessageEvent extends RepliableEvent<GroupMessage, GroupMessageReply>  implements IMessageEvent<GroupMessage>{
 
     private static final CoolQHandlerList handlers = new CoolQHandlerList();
 
     public GroupMessageEvent(GroupMessage report) {
         super(report);
     }
-
+    /**
+     * 获取QQ群
+     * @return 
+     */
+    public long getGroupId(){
+        return getHandle().group_id;
+    }
+    
     /**
      * 踢群,并中断广播
      */

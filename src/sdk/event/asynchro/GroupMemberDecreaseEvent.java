@@ -6,7 +6,7 @@
 package sdk.event.asynchro;
 
 import sdk.coolq.event.GroupMemberDecrease;
-import sdk.event.AsynchroEvent;
+import sdk.event.api.AsynchroEvent;
 import sdk.event.CoolQHandlerList;
 
 /**

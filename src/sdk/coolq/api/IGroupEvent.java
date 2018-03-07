@@ -5,7 +5,7 @@
  */
 package sdk.coolq.api;
 
-import sdk.event.AsynchroEvent;
+import sdk.event.api.AsynchroEvent;
 
 /**
  * 群相关

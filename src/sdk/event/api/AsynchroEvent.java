@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sdk.event;
+package sdk.event.api;
 
 import sdk.coolq.api.IEvent;
+import sdk.event.CoolQEvent;
 
 /**
  *

@@ -8,18 +8,28 @@ package sdk.event.syncro;
 import sdk.coolq.message.DiscussMessage;
 import sdk.coolq.message.reply.DiscussMessageReply;
 import sdk.event.CoolQHandlerList;
-import sdk.event.RepliableEvent;
+import sdk.event.api.IMessageEvent;
+import sdk.event.api.RepliableEvent;
 
 /**
  *
  * @author zyp
  */
-public class DiscussMessageEvent extends RepliableEvent<DiscussMessage, DiscussMessageReply> {
+public class DiscussMessageEvent extends RepliableEvent<DiscussMessage, DiscussMessageReply> implements IMessageEvent<DiscussMessage> {
 
     private static final CoolQHandlerList handlers = new CoolQHandlerList();
 
     public DiscussMessageEvent(DiscussMessage report) {
         super(report);
+    }
+
+    /**
+     * 获取讨论组
+     *
+     * @return
+     */
+    public long getDiscussId() {
+        return getHandle().discuss_id;
     }
 
     /**

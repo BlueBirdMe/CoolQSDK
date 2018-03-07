@@ -8,6 +8,7 @@ package sdk.event.syncro;
 import sdk.coolq.request.*;
 import sdk.coolq.request.reply.NewFriendApplyReply;
 import sdk.event.*;
+import sdk.event.api.RepliableEvent;
 
 /**
  * 加好友请求
@@ -21,6 +22,24 @@ public class NewFriendApplyEvent extends RepliableEvent<NewFriendApply, NewFrien
 
     public NewFriendApplyEvent(NewFriendApply apply) {
         super(apply);
+    }
+
+    /**
+     * 获取发送者QQ
+     *
+     * @return
+     */
+    public long getRequester() {
+        return getHandle().user_id;
+    }
+
+    /**
+     * 获取验证信息
+     *
+     * @return
+     */
+    public String getMessage() {
+        return getHandle().message;
     }
 
     /**

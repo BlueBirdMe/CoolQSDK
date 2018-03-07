@@ -10,11 +10,11 @@ import sdk.coolq.request.reply.NewGroupMemberReply;
 import sdk.event.syncro.NewGroupMemberApplyEvent;
 
 /**
- * 加群请求
  *
  * @author zyp
  */
-public class NewGroupMemberApply extends GroupRequest<NewGroupMemberApplyEvent, NewGroupMemberReply> {
+public class NewGroupInviting extends GroupRequest<NewGroupMemberApplyEvent, NewGroupMemberReply> {
+
     @Override
     public Class<NewGroupMemberApplyEvent> getEventClass() {
         return NewGroupMemberApplyEvent.class;

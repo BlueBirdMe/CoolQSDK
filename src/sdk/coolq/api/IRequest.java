@@ -6,8 +6,7 @@
 package sdk.coolq.api;
 
 import sdk.coolq.request.NewFriendApply;
-import sdk.coolq.request.NewGroupMemberApply;
-import sdk.event.RepliableEvent;
+import sdk.event.api.RepliableEvent;
 import sdk.util.bean.FieldSelector;
 
 /**
@@ -25,7 +24,7 @@ public abstract class IRequest<E extends RepliableEvent, R extends IReply> exten
      */
     @FieldSelector(
             value = {"friend", "group"},
-            clazz = {NewFriendApply.class, NewGroupMemberApply.class})
+            clazz = {NewFriendApply.class, GroupRequest.class})
     public String request_type;//
     /**
      * number	-	发送请求的 QQ 号

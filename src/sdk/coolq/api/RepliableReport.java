@@ -9,7 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 import sdk.event.CoolQEvent;
 import sdk.event.CoolQEventException;
 import sdk.event.CoolQEventManager;
-import sdk.event.RepliableEvent;
+import sdk.event.api.RepliableEvent;
 import sdk.util.bean.Ignore;
 
 /**
