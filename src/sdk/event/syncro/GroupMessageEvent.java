@@ -65,6 +65,9 @@ public class GroupMessageEvent extends RepliableEvent<GroupMessage, GroupMessage
      * @param at_sender 是否@用户
      */
     public void replyMessage(String message, boolean at_sender) {
+        if(message == null || message.isEmpty()){
+            return;
+        }
         reply = new GroupMessageReply();
         reply.reply = message;
         reply.at_sender = at_sender;

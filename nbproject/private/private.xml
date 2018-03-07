@@ -8,26 +8,46 @@
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/NewFriendEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/Main.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/http/MessageHandler.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/IRequest.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/request/NewGroupInviting.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/IEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/CoolQEventHandler.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/KickedFromGroupEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/CoolQEventManager.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/GroupRequest.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/IReply.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/GroupFileUploadEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/SDKConfig.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/SDK.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/CoolQAPI.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/GroupManagerChangeEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/GroupMemberDecreaseEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/request/NewGroupMemberApply.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/GroupMemberChange.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/CoolQSDK.properties</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/SDKInit.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/syncro/PrivateMessageEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/api/AsynchroEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/request/NewFriendApply.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/syncro/NewFriendApplyEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/util/bean/BeanUtils.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/GroupMemberIncreaseEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/message/DiscussMessage.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/CoolQEventPriority.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/message/PrivateMessage.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/syncro/NewGroupMemberApplyEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/IMessage.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/syncro/GroupMessageEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/syncro/NewGroupInvitingEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/request/reply/NewFriendApplyReply.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/util/API.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/request/reply/NewGroupMemberReply.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/api/IMessageEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/syncro/DiscussMessageEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/request/reply/NewGroupInvitingReply.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/event/GroupMemberIncrease.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/api/RepliableEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/event/KickedFromGroup.java</file>
         </group>
     </open-files>
 </project-private>

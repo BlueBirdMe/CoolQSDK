@@ -31,6 +31,9 @@ public class PrivateMessageEvent extends RepliableEvent<PrivateMessage, PrivateM
      * @param at_sender 是否@用户
      */
     public void replyMessage(String message) {
+        if(message == null || message.isEmpty()){
+            return;
+        }
         reply = new PrivateMessageReply();
         reply.reply = message;
         setCancelled(true);
