@@ -11,7 +11,7 @@ import sdk.event.CoolQHandlerList;
 import sdk.event.api.RepliableEvent;
 
 /**
- * 有人请求入群事件
+ * 有人请求入群事件???
  * @author zyp
  */
 public class NewGroupMemberApplyEvent extends RepliableEvent<NewGroupMemberApply, NewGroupMemberReply> {

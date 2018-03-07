@@ -10,7 +10,7 @@ import sdk.coolq.request.reply.NewGroupMemberReply;
 import sdk.event.syncro.NewGroupMemberApplyEvent;
 
 /**
- * 加群请求
+ * QQ申请加群
  *
  * @author zyp
  */

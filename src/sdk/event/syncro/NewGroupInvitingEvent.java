@@ -11,15 +11,15 @@ import sdk.event.CoolQHandlerList;
 import sdk.event.api.RepliableEvent;
 
 /**
- * 被邀请入群事件
+ * 被邀请入群事件,不知何时触发= =??
  *
  * @author zyp
  */
-public class GroupInvitingEvent extends RepliableEvent<NewGroupInviting, NewGroupInvitingReply> {
+public class NewGroupInvitingEvent extends RepliableEvent<NewGroupInviting, NewGroupInvitingReply> {
 
     private static final CoolQHandlerList handlers = new CoolQHandlerList();
 
-    public GroupInvitingEvent(NewGroupInviting apply) {
+    public NewGroupInvitingEvent(NewGroupInviting apply) {
         super(apply);
     }
 

@@ -25,6 +25,7 @@ public class MessageHandler implements HttpHandler {
     @Override
     public void handle(HttpExchange exchange) throws IOException {
         String message = IOUtils.readContent(exchange.getRequestBody(), SDKConfig.UTF_8);
+//        System.out.println("[CoolQSDK]收到上报消息: " + message);
         JSONObject json;
         try {
             json = new JSONObject(message);
