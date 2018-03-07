@@ -7,16 +7,16 @@ package sdk.coolq.request;
 
 import sdk.coolq.api.GroupRequest;
 import sdk.coolq.request.reply.NewGroupMemberReply;
-import sdk.event.syncro.NewGroupMemberApplyEvent;
+import sdk.event.syncro.GroupInvitingEvent;
 
 /**
  *
  * @author zyp
  */
-public class NewGroupInviting extends GroupRequest<NewGroupMemberApplyEvent, NewGroupMemberReply> {
+public class NewGroupInviting extends GroupRequest<GroupInvitingEvent, NewGroupMemberReply> {
 
     @Override
-    public Class<NewGroupMemberApplyEvent> getEventClass() {
-        return NewGroupMemberApplyEvent.class;
+    public Class<GroupInvitingEvent> getEventClass() {
+        return GroupInvitingEvent.class;
     }
 }
