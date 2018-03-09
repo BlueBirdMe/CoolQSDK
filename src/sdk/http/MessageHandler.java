@@ -10,6 +10,7 @@ import com.sun.net.httpserver.HttpHandler;
 import java.io.IOException;
 import java.io.OutputStream;
 import org.json.JSONObject;
+import sdk.SDK;
 import sdk.SDKConfig;
 import sdk.coolq.api.IReport;
 import sdk.util.IOUtils;
@@ -25,6 +26,7 @@ public class MessageHandler implements HttpHandler {
     @Override
     public void handle(HttpExchange exchange) throws IOException {
         String message = IOUtils.readContent(exchange.getRequestBody(), SDKConfig.UTF_8);
+        SDK.log(message);
 //        System.out.println("[CoolQSDK]收到上报消息: " + message);
         JSONObject json;
         try {

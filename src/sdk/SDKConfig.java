@@ -30,7 +30,11 @@ public class SDKConfig {
      * CoolQ上报端口
      */
     public static int SDKPort;
-
+    /**
+     * 是否记录所有消息
+     */
+    public static boolean debug;
+    
     static {
         try {
             File f = new File("CoolQSDK.properties");
@@ -42,6 +46,7 @@ public class SDKConfig {
             coolQURL = config.getProperty("coolQURL");
             SDKHost = config.getProperty("SDKHost");
             SDKPort = Integer.valueOf(config.getProperty("SDKPort"));
+            debug = Boolean.valueOf(config.getProperty("debug"));
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("[CoolQSDK]配置加载失败...");
