@@ -15,7 +15,9 @@
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/KickedFromGroupEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/CoolQEventManager.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/GroupRequest.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/util/JSONUtils.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/api/IReply.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/SDKConstant.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/GroupFileUploadEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/SDKConfig.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/SDK.java</file>
@@ -32,6 +34,7 @@
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/syncro/NewFriendApplyEvent.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/util/bean/BeanUtils.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/asynchro/GroupMemberIncreaseEvent.java</file>
+            <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/util/FileUtils.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/message/DiscussMessage.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/event/CoolQEventPriority.java</file>
             <file>file:/D:/NetBeans工作空间/CoolQSDK/src/sdk/coolq/message/PrivateMessage.java</file>

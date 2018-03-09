@@ -28,6 +28,7 @@ public class SDK {
             try {
                 bw.write(format.format(new Date()) + " " + s);
                 bw.newLine();
+                bw.flush();
             } catch (IOException ex) {
                 ex.printStackTrace();
             }

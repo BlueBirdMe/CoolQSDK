@@ -32,9 +32,9 @@ public class SDKInit {
 
     public static void init(Map<Class, String> init) {
         try {
-            if(SDKConfig.debug){
-                File f =FileUtils.getFile("debug.log", true);
-                SDK.bw = FileUtils.getWriter(f, SDKConfig.UTF_8,true);
+            if (SDKConfig.debug) {
+                File f = FileUtils.getFile(new File("debug.log").getAbsolutePath(), true);
+                SDK.bw = FileUtils.getWriter(f, SDKConfig.UTF_8, true);
             }
             System.out.println("[CoolQSDK]包扫描...");
             initClass(SDKInit.class, "sdk.");

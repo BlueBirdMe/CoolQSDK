@@ -165,8 +165,8 @@ public class FileUtils {
 
     public static File getFile(String path, boolean create) {
         File f = new File(path);
-        if (!f.exists()) {
-            getFolder(f.getParent(), true);
+        if (!f.exists() && create) {
+            f.getParentFile().mkdirs();
             try {
                 f.createNewFile();
             } catch (IOException ex) {
