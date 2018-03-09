@@ -16,7 +16,7 @@ import java.util.Date;
  */
 public class SDK {
 
-    static SimpleDateFormat format = new SimpleDateFormat("[yyyy//MM/dd_HH:mm:ss]");
+    static SimpleDateFormat format = new SimpleDateFormat("[yyyy/MM/dd_HH:mm:ss]");
     public static BufferedWriter bw;
 
     public static void init() {
