@@ -283,7 +283,6 @@ public class CoolQAPI {
      */
     public static void setRestart() throws CoolQAPIFailException {
         command(SET_RESTART, null);
-
     }
 
     /**
@@ -307,10 +306,12 @@ public class CoolQAPI {
 
     private static <T> T buildResponse(Class<T> clazz, String message) throws CoolQAPIFailException {
         T response;
+        JSONObject json = null;
         try {
-            response = BeanUtils.create(clazz, new JSONObject(message));
+            json = new JSONObject(message);
+            response = BeanUtils.create(clazz, json);
         } catch (Exception ex) {
-            SDK.log("消息解析失败:"+message);
+            SDK.log("消息解析失败:" + message);
             throw new CoolQAPIFailException(ex);
         }
         return response;

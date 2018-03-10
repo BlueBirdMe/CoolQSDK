@@ -88,7 +88,7 @@ public class BeanUtils {
     public static <T> T create(Class<T> clazz, JSONObject json) throws Exception {
         return create(clazz, json.toString());
     }
-    
+
     /**
      * 根据Json创建Beans
      *
@@ -356,6 +356,9 @@ public class BeanUtils {
          * @throws Exception
          */
         private static Object createObject(Field holder, Class clazz, JsonElement ele) throws Exception {
+            if (ele == null || ele.isJsonNull()) {
+                return null;
+            }
             if (ele.isJsonPrimitive()) {//基本元素
                 return createPrimitiveObject(clazz, ele);
             } else if (Set.class.isAssignableFrom(clazz)) {//Set
