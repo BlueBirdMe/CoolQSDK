@@ -312,6 +312,7 @@ public class CoolQAPI {
             response = BeanUtils.create(clazz, json);
         } catch (Exception ex) {
             SDK.log("消息解析失败:" + message);
+            System.out.println("消息解析失败:" + message);
             throw new CoolQAPIFailException(ex);
         }
         return response;

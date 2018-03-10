@@ -29,7 +29,6 @@ public class SDK {
                 bw.write(format.format(new Date()) + " " + s);
                 bw.newLine();
                 bw.flush();
-                System.out.println("[CoolQSDK]" + s);
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
