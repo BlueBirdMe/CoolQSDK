@@ -6,11 +6,13 @@
 package sdk.coolq.response;
 
 import java.util.List;
+import sdk.util.bean.ComponentType;
 
 /**
  *
  * @author zyp
  */
 public class GroupListResponse extends Response{
+    @ComponentType(clazz = GroupInfo.class)
     public List<GroupInfo> data;
 }
